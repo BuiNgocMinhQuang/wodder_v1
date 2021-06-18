@@ -1,0 +1,24 @@
+footer {
+    background-color: $black-cl;
+    padding: 20px 0;
+    color: #b0b0b0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .backtotop {
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #b0b0b0;
+            scroll-behavior: smooth;
+        }
+    }
+    @include xs {
+        .container {
+            flex-direction: column;
+            .logofooter {
+                margin: 20px 0;
+            }
+        }
+    }
+}
